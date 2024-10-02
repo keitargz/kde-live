@@ -6,7 +6,7 @@ cp ./config/archives/vscode.key.chroot ./config/archives/vscode.key.binary
 rm -f packages.microsoft.gpg
 
 # Chrome repository settings
-wget -q -O https://dl-ssl.google.com/linux/linux/signing_key.pub > config/archives/chrome.key.chroot
+wget -qO- https://dl-ssl.google.com/linux/Linux_signing_key.pub > config/archives/chrome.key.chroot
 cp ./config/archives/chrome.key.chroot ./config/archives/chrome.key.binary
 
 # config
