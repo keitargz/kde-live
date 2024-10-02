@@ -1,8 +1,21 @@
+
+# japanese input
 fcitx5
 fcitx5-mozc
+
+# shell
 fish
+
+# fonts
 fonts-noto-cjk
+
+# editor
 neovim
 
+# desktop environment
 kde-plasma-desktop
 kde-config-fcitx5
+
+# etc
+wget
+ca-certificates
