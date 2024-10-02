@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=fcitx5 -d
+Hidden=false
+NoDisplay=false
+X-KDE-Autostart-enabled=true
+Name=Fcitx5
+Comment=Start Fcitx5 input method framework
