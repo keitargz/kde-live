@@ -3,5 +3,4 @@ calamares-settings-debian
 live-config
 live-config-doc
 live-config-systemd
-pkexec
 sudo

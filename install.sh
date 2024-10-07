@@ -1,8 +1,6 @@
 #!/bin/bash
-
 set -e
 
-# config
 lb config \
 		--apt apt \
 		--architecture amd64 \
@@ -13,3 +11,4 @@ lb config \
 		--bootappend-live "boot=live components locales=ja_JP.UTF-8 timezone=Asia/Tokyo keyboard-layouts=jp debug=1" \
 		--binary-image iso \
 
+sudo lb build

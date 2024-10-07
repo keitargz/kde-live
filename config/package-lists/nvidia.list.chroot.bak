@@ -1,0 +1,5 @@
+nvidia-driver
+nvidia-cuda-toolkit
+nvidia-kernel-dkms
+nvidia-settings
+nvidia-cudnn

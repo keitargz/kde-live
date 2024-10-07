@@ -4,3 +4,35 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl
 
 apt update
 apt install google-chrome-stable -y
+
+mkdir -p /usr/share/applications/
+
+cat<<EOF > /usr/share/applications/google-chrome.desktop
+[Desktop Entry]
+Version=1.0
+Name=Google Chrome
+GenericName=Web Browser
+GenericName[ja]=ウェブブラウザ
+Comment=Access the Internet
+Comment[ja]=インターネットにアクセス
+Exec=/usr/bin/google-chrome-stable %U
+StartupNotify=true
+Terminal=false
+Icon=google-chrome
+Type=Application
+Categories=Network;WebBrowser;
+MineType=application/pdf;application/rdf+xml;application/xhtml+xml;application/xhtml_xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
+Actions=new-window;new-private-window;
+
+[Desktop Action new-window]
+Name=New Window
+Name[ja]=新規ウィンドウ
+Exec=/usr/bin/google-chrome-stable
+
+[Desktop Action new-private-window]
+Name=New Incognito Window
+Name[ja]=新しいシークレット ウィンドウ
+Exec=/usr/bin/google-chrome-stable --incognito
+EOF
+
+xdg-settings set default-web-browser google-chrome.destkop

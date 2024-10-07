@@ -1,4 +1,3 @@
-
 # japanese input
 fcitx5
 fcitx5-mozc
@@ -19,3 +18,4 @@ kde-config-fcitx5
 # etc
 wget
 ca-certificates
+git
